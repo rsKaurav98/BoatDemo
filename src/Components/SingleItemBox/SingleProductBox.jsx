@@ -18,15 +18,15 @@ export function SingleProductBox({
   const { handleCartData, handleProductData } = useContext(AppContext);
   const toast = useToast();
 
-  // const handleToast = () => {
-  //   toast({
-  //     title: "Product Added To Cart.",
-  //     // description: "We've created your account for you.",
-  //     status: "success",
-  //     duration: 1000,
-  //     isClosable: true,
-  //   });
-  // };
+  const handleToast = () => {
+    toast({
+      title: "Product Added To Cart.",
+      // description: "We've created your account for you.",
+      status: "success",
+      duration: 1000,
+      isClosable: true,
+    });
+  };
 
   return (
     <>
@@ -115,7 +115,11 @@ export function SingleProductBox({
 
           <Box mt={"10px"} textAlign={"center"}>
             <Button
-              onClick={() => handleCartData(item)}
+               onClick={() => {
+                handleCartData(item);
+                handleToast(); 
+              }}
+              
               width={"100%"}
               _hover={"none"}
               p="0px 10px"
