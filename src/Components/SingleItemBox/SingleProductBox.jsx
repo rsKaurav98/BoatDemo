@@ -18,15 +18,15 @@ export function SingleProductBox({
   const { handleCartData, handleProductData } = useContext(AppContext);
   const toast = useToast();
 
-  const handleToast = () => {
-    toast({
-      title: "Product Added To Cart.",
-      // description: "We've created your account for you.",
-      status: "success",
-      duration: 1000,
-      isClosable: true,
-    });
-  };
+  // const handleToast = () => {
+  //   toast({
+  //     title: "Product Added To Cart.",
+  //     // description: "We've created your account for you.",
+  //     status: "success",
+  //     duration: 1000,
+  //     isClosable: true,
+  //   });
+  // };
 
   return (
     <>

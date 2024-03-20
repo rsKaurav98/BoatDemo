@@ -13,9 +13,9 @@ import { AppContext } from "../Context/AppContext";
 import { FaStar } from "react-icons/fa";
 import warranty from "./Images/image 116.png";
 import Description from "./Description";
-import Celebrity from "./Celebrity";
-import Warranty from "./Warrenty";
-import Faq from "./Faqs";
+// import Celebrity from "./Celebrity";
+// import Warranty from "./Warrenty";
+// import Faq from "./Faqs";
 
 export function ProductDetails() {
   const { productData, handleCartData } = useContext(AppContext);
